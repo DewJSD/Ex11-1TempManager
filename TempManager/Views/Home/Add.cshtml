@@ -4,6 +4,10 @@
     ViewData["Title"] = "Add";
 }
 
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
 <h2 class="p-2">Add temp</h2>
 
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
