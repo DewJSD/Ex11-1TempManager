@@ -28,6 +28,7 @@ namespace Ch11Ex1TempManager.Controllers
                 return RedirectToAction("Index");
             } 
             else {
+                ModelState.AddModelError("", "Please correct all errors");
                 return View(temp);
             }
         }
